@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    line-height:1.6;
+    font-size:20px;
+    color:#444;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.knawledge, .pairing{
+    text-align: center;
+}
+
+.knawledge{
+    background-color: #444;
+    color: white;
+}
+
+.pairing{
+    background-color: lightblue;
+    color: black;
+}
+
+.pairing > p, .knawledge > p{
+    padding-left: 40px;
+    padding-right 40px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    max-width: 650px;
+    margin: auto;
+}
+
+
+.sectionHeading{
+    padding: 30px;
+    line-height:1.2;
+}
+
+.contactInfo{
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+}
+
+.signUp{
+    margin: auto;
+    text-align: center;
+    max-width: 650px;
+    padding: 20px;
+}
+
+.emailInput{
+    width: 300px;
+    max-width: 650px;
+}
