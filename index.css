@@ -8,7 +8,9 @@
 .company-name {
     font-size: 36px;
     margin-left: 10px;
+    width: 30%;
 }
+
 body{
     font-family: 'Lato', sans-serif;
     line-height:1.6;
