@@ -37,7 +37,7 @@ body{
 
 .pairing > p, .knawledge > p{
     padding-left: 40px;
-    padding-right 40px;
+    padding-right: 40px;
     padding-bottom: 100px;
     padding-top: 100px;
     max-width: 650px;
@@ -64,6 +64,8 @@ body{
 }
 
 .emailInput{
-    width: 300px;
+    margin: 40px auto;
+    width: 100% auto;
     max-width: 650px;
+    padding: 12px 20px;
 }
