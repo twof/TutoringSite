@@ -1,8 +1,10 @@
+
 body {
     background-image: url("images/background.png");
     background-size: cover;
     font-family: "Helvetica Neue";
     background-attachment: fixed;
+
 }
 
 .home {
@@ -11,6 +13,17 @@ body {
     transform: translate(-50%);
     color: white;
     position: absolute;
+    height: 100%;
+}
+.info {
+    top: 100%;
+    width: 900px;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    position: absolute;
+    height: 100%;
+    text-align: center;
 }
 
 .home > p {
@@ -74,4 +87,17 @@ form.email_field button {
 form.email_field button:focus {
     background-color: white;
     color: #314C66;
+    outline-width: 0;
+}
+
+.home a {
+    color: white;
+}
+.home i {
+    position: absolute;
+    bottom: 0;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%);
+    font-size: 70px;
 }
