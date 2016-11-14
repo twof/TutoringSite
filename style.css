@@ -32,6 +32,18 @@ body {
     transform: translate(-50%);
     color: white;
     position: absolute;
+    /*background-color: rgba(255, 255, 255, 0.56);*/
+    height: 100%;
+    text-align: center;
+}
+.contact {
+    top: 300%;
+    width: 900px;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    position: absolute;
+    /*background-color: red;*/
     height: 100%;
     text-align: center;
 }
@@ -45,11 +57,11 @@ p.title {
 }
 
 p.description {
-    font-size: 30px;
+    font-size: 35px;
 }
 
 p.signup {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 form.email_field  > fieldset {
@@ -112,15 +124,47 @@ form.email_field button:focus {
     font-size: 70px;
 }
 
+.tutors a {
+    color: white;
+}
+.tutors i {
+    position: absolute;;
+    bottom: 0%;
+    /*margin-left: 50%;*/
+    margin-right: 50%;
+    transform: translate(-50%);
+    font-size: 70px;
+}
+
 .information {
     position:  absolute;
     top: 50%;
     transform: translate(0, -50%);
+    overflow: hidden;
+}
+
+.information .view_1 {
+    width: 100%;
+    left: 100%;
+    float: right;
+}
+.information .view_2 {
+    position: absolute;
+    width: 100%;
+    left: 200%;
+    float: right;
+}
+
+.information .view_3 {
+    position: absolute;
+    left: 300%;
+    float: right;
 }
 
 .tutor {
     position:  absolute;
-    top: 50%;
+    top: 0;
+    width: 100%
     transform: translate(0, -50%);
 }
 
@@ -141,4 +185,11 @@ td {
     border-color: white;
     border-width: 3px;
     border-style: solid;
+}
+
+.contact_us {
+    position:  absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    overflow: hidden;
 }
