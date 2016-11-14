@@ -6,6 +6,7 @@
         <title>TITLE</title>
         <meta name="description" content="DESCRIPTION">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
         <meta name="google-site-verification" content="knw1tVlXEK7CMFHJOXq3XQ2zYwYl_rlgLmqUFHCi-0E" />
     </head>
 
@@ -23,14 +24,34 @@
                             <button>Submit</button>
                         </fieldset>
                     </form>
+                    <a href="#info_view"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
             </div>
 
-            <!-- <div class="signup">
+            <div class="info" id="info_view">
 
-            </div> -->
+
+                <p class="title"> Cutting edge knowlege and tools </p>
+                <p class="description"> Tutors at MLWU are trained with the most up to date tools and development practices as set by industry standards. Unlike maths or literature, the world of software is constantly evolving, and MLWU works on the belief that instruction must evolve with it. </p>
+                <p class="signup"> </p>
+
+                
+            </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script>
+            $(".home a").click(function(event) {
+                $(".home a").removeClass("selected");
+                $(this).addClass("selected");
 
+                var id = $(this).attr("href");
+                console.log(id);
+                var y = $(id).offset().top;
 
+                $("body").stop().animate({scrollTop:y}, 700);
+
+            });
+
+        </script>
     </body>
 
 </html>

@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Rubik');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.company-name {
+    font-size: 36px;
+    margin-left: 10px;
+    width: 30%;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    line-height:1.6;
+    font-size:20px;
+    color:#444;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.knawledge, .pairing{
+    text-align: center;
+}
+
+.knawledge{
+    background-color: #444;
+    color: white;
+}
+
+.pairing{
+    background-color: lightblue;
+    color: black;
+}
+
+.pairing > p, .knawledge > p{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    max-width: 650px;
+    margin: auto;
+}
+
+
+.sectionHeading{
+    padding: 30px;
+    line-height:1.2;
+}
+
+.contactInfo{
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+}
+
+.sign-up{
+    margin: auto;
+    text-align: center;
+    max-width: 650px;
+    padding: 20px;
+}
+
+.emailInput{
+    margin: 40px auto;
+    width: 100% auto;
+    max-width: 650px;
+    padding: 12px 20px;
+}
