@@ -25,6 +25,16 @@ body {
     height: 100%;
     text-align: center;
 }
+.tutors {
+    top: 200%;
+    width: 900px;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    position: absolute;
+    height: 100%;
+    text-align: center;
+}
 
 .home > p {
     text-align: center;
@@ -100,4 +110,35 @@ form.email_field button:focus {
     margin-right: 50%;
     transform: translate(-50%);
     font-size: 70px;
+}
+
+.information {
+    position:  absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.tutor {
+    position:  absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.tutor .title {
+}
+
+table {
+    border-spacing: 20px 50px;
+    text-align: center;
+}
+
+td {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
 }
