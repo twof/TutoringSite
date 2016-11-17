@@ -30,8 +30,8 @@
             <div class="info" id="info_view">
 
 
-                <div class="information">
-                    <div class="view view_1">
+                <div class="information w3-content w3-display-container">
+                    <div class="mySlides view view_1">
                         <p class="title">Cutting edge knowlege and tools</p>
                         <p class="description">
                             Tutors at Mission Learn are trained with the most up to date
@@ -42,7 +42,7 @@
                         </p>
                         <p class="signup"></p>
                     </div>
-                    <div class="view view_2">
+                    <div class="mySlides view view_2">
                         <p class="title">Pair programming</p>
                         <p class="description">
                             Pair programming is used to great effect at a wide range of
@@ -53,7 +53,7 @@
                             tutors andstudents with a similar outcome.
                         </p>
                     </div>
-                    <div class="view view_3">
+                    <div class="mySlides view view_3">
                         <p class="title">Multilingual</p>
                         <p class="description">
                             Our tutors hail from all over the world and as a result are
@@ -66,6 +66,8 @@
                         </p>
                     </div>
                 </div>
+                <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+                <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
             </div>
             <div class="tutors">
                 <div class="tutor">
@@ -107,6 +109,23 @@
 
             });
 
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";
+              }
+              x[slideIndex-1].style.display = "block";
+            }
         </script>
     </body>
 

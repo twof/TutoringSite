@@ -143,21 +143,18 @@ form.email_field button:focus {
     overflow: hidden;
 }
 
-.information .view_1 {
-    width: 100%;
-    left: 100%;
-    float: right;
-}
-.information .view_2 {
-    position: absolute;
-    width: 100%;
-    left: 200%;
-    float: right;
+.w3-display-left {
+    position:  absolute;
+    top: 50%;
+    left: -10%;
+    font-size: 70px;
 }
 
-.information .view_3 {
-    position: absolute;
-    left: 300%;
+.w3-display-right {
+    position:  absolute;
+    top: 50%;
+    right: -10%;
+    font-size: 70px;
     float: right;
 }
 
