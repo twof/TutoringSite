@@ -187,6 +187,22 @@ td {
 .contact_us {
     position:  absolute;
     top: 50%;
-    transform: translate(0, -50%);
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     overflow: hidden;
+}
+
+.contact_us .title {
+    position: relative;;
+    top: 0;
+    font-size: 70px;
+}
+.contact_us .body {
+    font-size: 60px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
