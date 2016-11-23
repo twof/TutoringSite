@@ -112,6 +112,24 @@ form.email_field button:focus {
     outline-width: 0;
 }
 
+.info a {
+    color: white;
+}
+
+.info i {
+    position: absolute;
+    bottom: 0;
+    font-size: 70px;
+    left: 50%;
+    right: 50%;
+}
+/*.info {
+    background-color: blue;
+}
+.information {
+    background-color: yellow;
+}*/
+
 .home a {
     color: white;
 }
@@ -128,9 +146,8 @@ form.email_field button:focus {
     color: white;
 }
 .tutors i {
-    position: absolute;;
+    position: absolute;
     bottom: 0%;
-    /*margin-left: 50%;*/
     margin-right: 50%;
     transform: translate(-50%);
     font-size: 70px;
@@ -148,6 +165,7 @@ form.email_field button:focus {
     top: 50%;
     left: -10%;
     font-size: 70px;
+
 }
 
 .w3-display-right {
@@ -155,7 +173,7 @@ form.email_field button:focus {
     top: 50%;
     right: -10%;
     font-size: 70px;
-    float: right;
+
 }
 
 .tutor {
@@ -177,13 +195,44 @@ td {
     position: relative;
     height: 200px;
     width: 200px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 100%;
     border-color: white;
     border-width: 3px;
     border-style: solid;
 }
 
+.photo {
+    background-position: center;
+    background-size: cover;
+    font-size: 40px;
+    font-weight: bold;
+    color: transparent;
+    transition: 1s;
+}
+.photo:hover {
+    color: white;
+    background-image: url();
+
+}
+.jay{
+    background-image: url("images/jay.png");
+}
+.alexp {
+    background-image: url("images/alexp.png");
+}
+.nabil{
+    background-image: url("images/nabil.png");
+}
+.alexr{
+    background-image: url("images/alexr.png");
+}
+.fiona{
+    background-image: url("images/fiona.png");
+}
+.julia{
+    background-image: url("images/julia.png");
+}
 .contact_us {
     position:  absolute;
     top: 50%;

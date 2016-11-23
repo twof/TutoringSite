@@ -65,29 +65,35 @@
                             here for you!
                         </p>
                     </div>
+
                 </div>
                 <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
                 <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                <a href="#tutors"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
             </div>
-            <div class="tutors">
+            <div class="tutors" id="tutors">
                 <div class="tutor">
                     <p class="title"> Our Tutors: </p>
                     <table>
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="jay photo"><p>Jay</p></td>
+                            <td class="fiona photo">Fiona</td>
+                            <td class="alexr photo"><p>Alex</p></td>
+                            <td class="julia photo">Julia</td>
+
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="alexp photo"><p>Alex</p></td>
+                            <td class="photo"><p></p></td>
+                            <td class="nabil photo"><p>Nabil</p></td>
+                            <td class="photo"></td>
+
+
                         </tr>
                     </table>
-                    <a href="#contact"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+
                 </div>
+                <a href="#contact"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
             </div>
             <div class="contact" id="contact">
                 <div class="contact_us">
@@ -96,10 +102,12 @@
                 </div>
             </div>
         </div>
+
+
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script>
-            $(".home a, .tutors a").click(function(event) {
-                $(".home a, .tutors a").removeClass("selected");
+            $(".home a, .tutors a, .info a").click(function(event) {
+                $(".home a, .tutors a, .info a").removeClass("selected");
                 $(this).addClass("selected");
 
                 var id = $(this).attr("href");
