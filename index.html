@@ -96,9 +96,28 @@
                 <a href="#contact"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
             </div>
             <div class="contact" id="contact">
+                <div class="map"></div>
+                <script>
+                  function initMap() {
+                    var uluru = {lat: -25.363, lng: 131.044};
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                      zoom: 4,
+                      center: uluru
+                    });
+                    var marker = new google.maps.Marker({
+                      position: uluru,
+                      map: map
+                    });
+                  }
+                </script>
+                <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBN5usdKr2FZB8AZ8gnaUaeu47rwQ0xsjc&callback=initMap">
+                </script>
                 <div class="contact_us">
-                    <p class="title"> Contact Us: </p>
-                    <p class="body"> hello@missionlearn.io </p>
+                    <p class="title">Contact Us: </p>
+                    <p class="body">Email: hello@missionlearn.io </p>
+                    <p class="body">Phone: (415) 735-5209</p>
+                    <p class="body">Address: 1547 Mission St, San Francisco, CA 94103</p>
                 </div>
             </div>
         </div>

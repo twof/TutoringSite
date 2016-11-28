@@ -20,7 +20,6 @@ body{
     width: 100%;
 }
 
-
 .knawledge, .pairing{
     text-align: center;
 }
@@ -43,7 +42,6 @@ body{
     max-width: 650px;
     margin: auto;
 }
-
 
 .sectionHeading{
     padding: 30px;
@@ -68,4 +66,14 @@ body{
     width: 100% auto;
     max-width: 650px;
     padding: 12px 20px;
+}
+
+.contact_us .body{
+    position: relative;
+    font-size: 14px;
+}
+
+.map{
+    height: 400px;
+    width: 100%;
 }
