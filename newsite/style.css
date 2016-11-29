@@ -1,0 +1,405 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Super Top*/
+
+.superTop {
+    margin: 0;
+    padding: 0;
+
+    height: 50px;
+
+    background-color: rgb(37, 163, 155);
+    color: white;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+}
+
+.superTop .left {
+    display: inline;
+    float: left;
+}
+
+.superTop .left p {
+    display: inline;
+    padding-left: 1em;
+}
+
+.superTop .right {
+    float: right;
+}
+
+.superTop .right i {
+    padding-right: 1.5em;
+}
+
+/*Banner*/
+
+.banner {
+
+    /*Fix To Top?*/
+    /*position: fixed;
+    width: 100%;
+    top: 0;*/
+
+    margin: 0;
+    padding: 0;
+
+    height: 100px;
+
+    background-color: #cd2122;
+}
+
+.banner img {
+    padding-left: 8em;
+    padding-right: 8em;
+    float: left;
+}
+
+.banner .link {
+    margin: 0;
+    padding: 0;
+
+    display: inline-block;
+
+    /*center text in div*/
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    /*background-color: green;*/
+
+    height: calc(100% - 5px);
+
+    opacity: 1;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.banner .link:hover {
+}
+
+.banner a {
+    color: white;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*Hero*/
+
+.hero {
+    margin: 0;
+    padding: 0;
+
+    height: 500px;
+    color: white;
+
+    font-family: 'Lato', sans-serif;
+
+    background-image: url("http://res.cloudinary.com/www-virgin-com/virgin-com-prod/sites/virgin.com/files/Articles/Getty/finland_education_getty_0.jpg");
+    background-size: cover;
+    -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(50%);
+}
+
+.hero h1 {
+    padding: 0;
+    margin: 0;
+
+    padding-top: 3em;
+    padding-left: 1em;
+
+    text-transform: uppercase;
+    font-size: 48px;
+}
+
+.hero h2 {
+
+}
+
+.hero p {
+
+}
+
+/*About*/
+
+.about {
+    margin: 0;
+    padding: 0;
+
+    padding-top: 6em;
+    padding-bottom: 6em;
+
+    height: 500px;
+
+    background-color: white;
+    color: black;
+}
+
+.about h2 {
+    color: #cd2122;
+
+    text-align: center;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.about h3 {
+    color: #222;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.about p {
+    color: #6f6f6f;
+
+    text-align: center;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+
+    text-decoration: none;
+    letter-spacing: 0.3px;
+    word-spacing: 2px;
+    line-height: 28px;
+
+    /*text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;*/
+}
+
+.about .col-33 p {
+    text-align: left;
+}
+
+/*Classes*/
+
+.classes {
+    margin: 0;
+    padding: 0;
+
+    padding-top: 6em;
+    padding-bottom: 6em;
+
+    height: 500px;
+
+    background-color: #eee;
+    color: black;
+}
+
+.classes h2 {
+    color: #222;
+
+    text-align: center;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.classes h3 {
+    color: #222;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.classes p {
+    color: #6f6f6f;
+
+    text-align: center;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+
+    text-decoration: none;
+    letter-spacing: 0.3px;
+    word-spacing: 2px;
+    line-height: 28px;
+
+    /*text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;*/
+}
+
+.classes .card p {
+    text-align: left;
+}
+
+.classes .card {
+    padding: 0.5em;
+    margin: 0.5em;
+    width: calc(33% - 2em);
+    float: left;
+    background-color: white;
+}
+
+/*Tutors*/
+
+.tutors {
+    margin: 0;
+    padding: 0;
+
+    padding-top: 6em;
+    padding-bottom: 6em;
+
+    height: 900px;
+
+    background-color: white;
+    color: black;
+}
+
+.tutors img {
+    width: 100%;
+}
+
+.tutors h2 {
+    color: #333;
+
+    text-align: center;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.tutors h3 {
+    color: #222;
+
+    text-align: center;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.tutors p {
+    color: #6f6f6f;
+
+    text-align: center;
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+
+    text-decoration: none;
+    letter-spacing: 0.3px;
+    word-spacing: 2px;
+    line-height: 28px;
+
+    /*text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;*/
+}
+
+.tutors .cards {
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.tutors .card {
+    margin: 0.75em;
+    width: calc(33% - 1.5em);
+    float: left;
+    background-color: rgb(244, 244, 244);
+    height: 400px;
+}
+
+.tutors .card p {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    text-align: left;
+}
+
+/*COLUMNS*/
+
+.col-33 {
+    padding: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: 0.5em;
+    width: calc(33% - 6em);
+    float: left;
+}
+
+
+
+
+
+
+
+
+
