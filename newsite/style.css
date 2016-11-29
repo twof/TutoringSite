@@ -4,6 +4,10 @@ html, body {
 }
 
 
+/*
+BLUE COLOR: #205f93;
+*/
+
 /*Super Top*/
 
 .superTop {
@@ -45,7 +49,7 @@ html, body {
     margin: 0;
     height: 100px;
     width: 100%;
-    background-color: #cd2122;
+    background-color: #205f93;
     position: absolute;
     z-index: 100;
     display: flex;
@@ -92,7 +96,9 @@ html, body {
 }
 
 
-/*Hero*/
+/*============================================================
+Hero
+============================================================*/
 
 .hero {
     margin: -10px;
@@ -139,7 +145,9 @@ html, body {
 .hero-content p {}
 
 
-/*About*/
+/*============================================================
+About
+============================================================*/
 
 .about-container {
     display: flex;
@@ -159,7 +167,7 @@ html, body {
 }
 
 .about h2 {
-    color: #cd2122;
+    color: #205f93;
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-size: 36px;
@@ -177,6 +185,7 @@ html, body {
     font-family: 'Lato', sans-serif;
     font-size: 21px;
     font-weight: 700;
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -186,26 +195,39 @@ html, body {
 }
 
 .about p {
-    color: #6f6f6f;
+    color: #333;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 300;
     text-decoration: none;
     letter-spacing: 0.3px;
     word-spacing: 2px;
     line-height: 28px;
+    padding-bottom: 2em;
     /*text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;*/
 }
 
+.about .col-33 {
+    padding: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: 0.5em;
+    width: 33%;
+}
+
 .about .col-33 p {
+    color: #6f6f6f;
+    font-size: 15px;
     text-align: left;
 }
 
 
-/*Classes*/
+/*============================================================
+Classes
+============================================================*/
 
 .classes {
     display: flex;
@@ -214,12 +236,12 @@ html, body {
     padding: 0;
     padding-top: 6em;
     padding-bottom: 6em;
-    background-color: #eee;
+    background-color: #f3f3f3;
     color: black;
 }
 
 .classes h2 {
-    color: #222;
+    color: #205f93;
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-size: 36px;
@@ -237,6 +259,7 @@ html, body {
     font-family: 'Lato', sans-serif;
     font-size: 21px;
     font-weight: 700;
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -246,21 +269,21 @@ html, body {
 }
 
 .classes p {
-    color: #6f6f6f;
+    color: #333;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 300;
     text-decoration: none;
     letter-spacing: 0.3px;
     word-spacing: 2px;
     line-height: 28px;
-    /*text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;*/
+    padding-bottom: 2em;
 }
 
 .classes .card p {
+    color: #6f6f6f;
+    font-size: 15px;
     text-align: left;
 }
 
@@ -293,7 +316,7 @@ html, body {
 }
 
 .tutors h2 {
-    color: #333;
+    color: #205f93;
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-size: 36px;
@@ -355,14 +378,3 @@ html, body {
     text-align: left;
 }
 
-
-/*COLUMNS*/
-
-.col-33 {
-    padding: 0.5em;
-    padding-left: 2em;
-    padding-right: 2em;
-    margin: 0.5em;
-    width: calc(33% - 6em);
-    float: left;
-}
