@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Rubik');
-
 * {
     margin: 0;
     padding: 0;
@@ -11,30 +10,30 @@
     width: 30%;
 }
 
-body{
+body {
     font-family: 'Lato', sans-serif;
-    line-height:1.6;
-    font-size:20px;
-    color:#444;
+    line-height: 1.6;
+    font-size: 20px;
+    color: #444;
     margin: 0 auto;
     width: 100%;
 }
 
-.knawledge, .pairing{
+.knawledge, .pairing {
     text-align: center;
 }
 
-.knawledge{
+.knawledge {
     background-color: #444;
     color: white;
 }
 
-.pairing{
+.pairing {
     background-color: lightblue;
     color: black;
 }
 
-.pairing > p, .knawledge > p{
+.pairing>p, .knawledge>p {
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 100px;
@@ -43,37 +42,37 @@ body{
     margin: auto;
 }
 
-.sectionHeading{
+.sectionHeading {
     padding: 30px;
-    line-height:1.2;
+    line-height: 1.2;
 }
 
-.contactInfo{
+.contactInfo {
     padding: 30px;
     text-align: center;
     background-color: white;
 }
 
-.sign-up{
+.sign-up {
     margin: auto;
     text-align: center;
     max-width: 650px;
     padding: 20px;
 }
 
-.emailInput{
+.emailInput {
     margin: 40px auto;
     width: 100% auto;
     max-width: 650px;
     padding: 12px 20px;
 }
 
-.body{
+.body {
     position: relative;
     font-size: 14px;
 }
 
-.map{
+.map {
     height: 400px;
     width: 100%;
 }
