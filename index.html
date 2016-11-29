@@ -8,6 +8,34 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
         <meta name="google-site-verification" content="crM-rJLV42y8nutrwY40mJJmvAkcq3BsJM_86BagGG4" />
+
+        <script src="http://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+       <script>
+           var map;
+
+           function initialize(){
+               var mapDiv = document.getElementById('map-canvas');
+               var mapCenter = new google.maps.LatLng(37.773585,-122.417752);
+               var mapOptions = {
+                   zoom: 17,
+                   center: mapCenter,
+                   mapTypeId: google.maps.MapTypeId.MAP};
+
+               map = new google.maps.Map(mapDiv, mapOptions);
+
+               var markerOpts = {
+                   position: mapCenter,
+                   map: map,
+                   title: 'Make School',
+                   opacity: 0.75
+               };
+               var marker = new google.maps.Marker(markerOpts);
+
+               google.maps.event.addListener(map,'click',onMapClick);
+           }
+           google.maps.event.addDomListener(window,'load',initialize);
+       </script>
     </head>
 
     <body>
@@ -15,7 +43,7 @@
 
             <div class="home">
                     <p class="title"> Mission: Learn </p>
-                    <p class="description"> Mission Learn is a tutoring center with a focus on computer science and software develoment. Because our tutors only teach one subject, they are able to use the best tools for the job. </p>
+                    <p class="description"> Mission Learn is a tutoring center with a focus on computer science and software develoment.</p>
                     <p class="signup"> Signup Today! </p>
                     <br />
                     <form class="email_field" action="#" method="post">
@@ -96,32 +124,15 @@
                 <a href="#contact"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
             </div>
             <div class="contact" id="contact">
-                <div class="map"></div>
-                <script>
-                  function initMap() {
-                    var uluru = {lat: -25.363, lng: 131.044};
-                    var map = new google.maps.Map(document.getElementById('map'), {
-                      zoom: 4,
-                      center: uluru
-                    });
-                    var marker = new google.maps.Marker({
-                      position: uluru,
-                      map: map
-                    });
-                  }
-                </script>
-                <script async defer
-                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBN5usdKr2FZB8AZ8gnaUaeu47rwQ0xsjc&callback=initMap">
-                </script>
                 <div class="contact_us">
                     <p class="title">Contact Us: </p>
+                    <div id="map-canvas" style="height:500px"></div>
                     <p class="body">Email: hello@missionlearn.io </p>
                     <p class="body">Phone: (415) 735-5209</p>
                     <p class="body">Address: 1547 Mission St, San Francisco, CA 94103</p>
                 </div>
             </div>
         </div>
-
 
         <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
         <script>
@@ -134,7 +145,6 @@
                 var y = $(id).offset().top;
 
                 $("body").stop().animate({scrollTop:y}, 700);
-
             });
 
             var slideIndex = 1;
@@ -156,5 +166,4 @@
             }
         </script>
     </body>
-
 </html>
