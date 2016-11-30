@@ -18,7 +18,7 @@ Other Styles
 .line {
     margin: 0 auto;
     height: 1px;
-    background-color: #666;
+    background-color: #999;
     width: 80%;
 }
 
@@ -175,6 +175,7 @@ About
 }
 
 .about h2 {
+    margin-bottom: 0em;
     color: #205f93;
     text-align: center;
     font-family: 'Lato', sans-serif;
@@ -269,6 +270,7 @@ Classes
 }
 
 .classes h2 {
+    margin-bottom: 0em;
     color: #205f93;
     text-align: center;
     font-family: 'Lato', sans-serif;
@@ -357,6 +359,7 @@ Tutors
 }
 
 .tutors h2 {
+    margin-bottom: 0em;
     color: #205f93;
     text-align: center;
     font-family: 'Lato', sans-serif;
@@ -455,7 +458,7 @@ Contact
 }
 
 .contact form input {
-    font-family: 'Crimson Text', serif;
+    font-family: Arial, sans-serif;
     color: #333;
     margin: 0.5em;
     font-size: 0.9em;
@@ -476,7 +479,7 @@ Contact
 }
 
 .contact form textarea {
-    font-family: 'Crimson Text', serif;
+    font-family: Arial, sans-serif;
     color: #333;
     margin: 0.5em;
     line-height: 1.5em;
@@ -529,5 +532,13 @@ Contact
 }
 
 
+/*============================================================
+Footer
+============================================================*/
+
+.footer {
+    background-color: #205f93;
+    height: 500px;
+}
 
 
