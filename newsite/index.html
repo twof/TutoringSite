@@ -63,7 +63,6 @@
         <p><em>A tutoring center focused on Computer Science.</em></p>
 
         <div class="about-container">
-
             <div class="col-33">
                 <h3>Pair Programming</h3>
                 <p>Pair programming is used to great effect at a wide range of companies including Facebook, Twitter, Braintree, and Pivotal. Through mentorship, senior developers are able to accelerate junior developers' careers, and pairing is core. Mission: Learn believes the same can be implimented between tutors andstudents with a similar outcome.</p>
@@ -82,6 +81,7 @@
 
     </div>
 
+    <div class="line"></div>
 
     <!-- Classes -->
     <div class="classes">
@@ -127,10 +127,12 @@
         </div>
     </div>
 
+    <div class="line"></div>
+
     <!-- Tutors -->
     <div class="tutors">
         <h2>Our Tutors</h2>
-        <p>Our tutors are awesome! Check them out</p>
+        <p><em>Our tutors are awesome! Check them out</em></p>
 
         <div class="cards">
             <div class="card">
@@ -173,8 +175,26 @@
 
     <!-- Contact -->
     <div class="contact">
-        <h2>Contact Us</h2>
+        <h2>Get In Contact</h2>
+        <div class="map"></div>
 
+        <form action="code/contact.php" method="post" name="contact-form" class="fadeInBlock">
+            <p>
+            <input name="name" type="text" placeholder="Your name">
+            </p>
+
+            <p class="emailbox">
+            <input name="email" type="text" placeholder="Your email address">
+            </p>
+
+            <p class="emailmessage">
+            <textarea name="message" placeholder="Type your message here..."></textarea>
+            </p>
+
+            <p class="emailbuttons">
+            <input name="submit" type="submit" value="Submit">
+            </p>
+        </form>
     </div>
 
     <!-- Footer -->

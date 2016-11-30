@@ -8,7 +8,19 @@ html, body {
 BLUE COLOR: #205f93;
 */
 
-/*Super Top*/
+/*
+BANNER -> SMALLER ANd STICK TO TOP OF 
+*/
+
+/*============================================================
+Other Styles
+============================================================*/
+.line {
+    margin: 0 auto;
+    height: 1px;
+    background-color: #666;
+    width: 80%;
+}
 
 .superTop {
     margin: 0;
@@ -125,6 +137,7 @@ Hero
     font-family: 'Lato', sans-serif;
     position: relative;
     margin-top: -500px;
+    background-color: red;
     height: 500px;
     background-color: rgba(255, 255, 255, 0.50);
     padding-left: 60px;
@@ -148,11 +161,6 @@ Hero
 /*============================================================
 About
 ============================================================*/
-
-.about-container {
-    display: flex;
-    flex-direction: row;
-}
 
 .about {
     display: flex;
@@ -210,18 +218,38 @@ About
     -moz-osx-font-smoothing: grayscale;*/
 }
 
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .about .col-33 {
     padding: 0.5em;
     padding-left: 2em;
     padding-right: 2em;
     margin: 0.5em;
-    width: 33%;
+    width: calc(33% - 5em);
 }
 
 .about .col-33 p {
     color: #6f6f6f;
     font-size: 15px;
     text-align: left;
+}
+
+@media only screen and (max-width: 1140px) {
+
+    .about-container {
+        margin: 0 auto;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .about .col-33 {
+        width: auto;
+        max-width: 500px
+    }
 }
 
 
@@ -236,7 +264,7 @@ Classes
     padding: 0;
     padding-top: 6em;
     padding-bottom: 6em;
-    background-color: #f3f3f3;
+    /*background-color: #f1f1f1;*/
     color: black;
 }
 
@@ -281,6 +309,12 @@ Classes
     padding-bottom: 2em;
 }
 
+.classes .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .classes .card p {
     color: #6f6f6f;
     font-size: 15px;
@@ -288,18 +322,25 @@ Classes
 }
 
 .classes .card {
-    padding: 1em;
+    padding: 0.5em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: 0.5em;
+    width: calc(33% - 5em);
+    /*padding: 1em;
     margin: 0.5em;
     width: calc(33% - 3em);
     float: left;
     background-color: white;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .04);
     border: 1px solid rgba(0, 0, 0, .09);
-    border-radius: 3px;
+    border-radius: 3px;*/
 }
 
 
-/*Tutors*/
+/*============================================================
+Tutors
+============================================================*/
 
 .tutors {
     margin: 0;
@@ -344,21 +385,22 @@ Classes
 }
 
 .tutors p {
-    color: #6f6f6f;
+    color: #333;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 300;
     text-decoration: none;
     letter-spacing: 0.3px;
     word-spacing: 2px;
     line-height: 28px;
-    /*text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;*/
+    padding-bottom: 2em;
 }
 
 .tutors .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
     margin: 0 auto;
     max-width: 900px;
 }
@@ -372,9 +414,120 @@ Classes
 }
 
 .tutors .card p {
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 0.5em;
+    color: #6f6f6f;
+    font-size: 15px;
     text-align: left;
 }
+
+/*============================================================
+Contact
+============================================================*/
+
+.contact {
+    padding: 0;
+    margin: 0;
+
+    padding-top: 6em;
+    padding-bottom: 6em;
+
+    background-color: #f1f1f1;
+}
+
+.contact h2 {
+    color: #205f93;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.contact .map {
+    margin: 0 auto;
+    background-color: white;
+    width: calc(900px - 0.5em);
+    height: 500px;
+}
+
+.contact form input {
+    font-family: 'Crimson Text', serif;
+    color: #333;
+    margin: 0.5em;
+    font-size: 0.9em;
+    padding: 1em;
+    width: 400px;
+    height: 20px;
+
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #ccc;
+
+    width: 80%;
+    max-width: 400px;
+}
+
+.contact form input[type="text"]:focus {
+    border-color: #4885ed;
+}
+
+.contact form textarea {
+    font-family: 'Crimson Text', serif;
+    color: #333;
+    margin: 0.5em;
+    line-height: 1.5em;
+    font-size: 0.9em;
+    border: 1px solid #ccc;
+    width: 400px;
+    padding: 1em;
+    height: 150px;
+
+    outline: none;
+    box-shadow: none;
+
+    width: 80%;
+    max-width: 400px;
+}
+
+.contact form {
+    text-align: center;
+}
+
+.contact form textarea:focus {
+    border-color: #4885ed;
+}
+
+.contact form input[type=submit] {
+    border: solid 1px #ccc;
+    background-color: white;
+    color: black;
+    margin: 0.5em;
+    line-height: 1em;
+    font-size: 0.9em;
+    width: calc(400px + 2em);
+    height: calc(20px + 2em);
+    cursor:pointer;
+
+    width: calc(80% + 2em);
+    max-width: calc(400px + 2em);
+}
+
+.contact form input[type=submit]:hover {
+    outline: none;
+    border: solid 1px #bbb;
+    background-color: #fefefe;
+}
+
+.contact form input[type=submit]:active {
+    outline: none;
+    border: solid 1px #4885ed;
+    background-color: #fdfdfd;
+}
+
+
+
 
