@@ -23,7 +23,6 @@
     <!-- Scripts -->
     <script src="https://use.fontawesome.com/c3fae9cb5c.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="app.js"></script>
 
 </head>
 
@@ -176,23 +175,23 @@
     <!-- Contact -->
     <div class="contact">
         <h2>Get In Contact</h2>
-        <div class="map"></div>
+        <div id="map" class="map"></div>
 
-        <form action="code/contact.php" method="post" name="contact-form" class="fadeInBlock">
+        <form id="contact-form" method="post" name="contact-form" class="fadeInBlock">
             <p>
-            <input name="name" type="text" placeholder="Your name">
+            <input id="user_name" name="name" type="text" placeholder="Your name">
             </p>
 
             <p class="emailbox">
-            <input name="email" type="text" placeholder="Your email address">
+            <input id="user_email" name="email" type="text" placeholder="Your email address">
             </p>
 
-            <p class="emailmessage">
-            <textarea name="message" placeholder="Type your message here..."></textarea>
+            <p class="emailbox">
+            <input id="user_help" name="help" type="text" placeholder="What would you like to be tutored on?">
             </p>
 
             <p class="emailbuttons">
-            <input name="submit" type="submit" value="Submit">
+            <input id="submit" name="submit" type="submit" value="Submit">
             </p>
         </form>
     </div>
@@ -207,6 +206,11 @@
             
         </div>
     </div>
+
+    <!-- Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+    <script src="./app.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYehaRd52hQNiohbE6reUYZXp_jJX12XU&libraries=places&callback=initMap"></script>
 
 </body>
 
