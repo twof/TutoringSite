@@ -123,35 +123,23 @@ Hero
 ============================================================*/
 
 .hero {
-    margin: -10px;
     margin-top: 90px;
-    height: 500px;
-    box-sizing: border-box;
+    height: 600px;
     color: white;
-    background-image: url("images/background.jpg");
+    background-image: url("images/kidsbackground.png");
     background-size: cover;
-    -webkit-filter: grayscale(50%);
-    /* Safari 6.0 - 9.0 */
-    filter: grayscale(50%);
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
     overflow: hidden;
-    /* box-sizing: border-box; */
     z-index: -5;
 }
 
 .hero-content {
+    color: white;
     font-family: 'Lato', sans-serif;
     position: relative;
     margin-top: -500px;
-    background-color: red;
     height: 500px;
-    background-color: rgba(255, 255, 255, 0.50);
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 6em;
+    padding-right: 6em;
 }
 
 .hero-content h1 {
@@ -446,6 +434,15 @@ Contact
     background-color: #f1f1f1;
 }
 
+.contact .map {
+    margin: 0 auto;
+    background-color: white;
+    width: 90%;
+    max-width: 800px;
+    height: 500px;
+    margin-bottom: 8em;
+}
+
 .contact h2 {
     color: #205f93;
     text-align: center;
@@ -460,11 +457,20 @@ Contact
     -moz-osx-font-smoothing: grayscale;
 }
 
-.contact .map {
-    margin: 0 auto;
-    background-color: white;
-    width: calc(900px - 0.5em);
-    height: 500px;
+.contact p {
+    color: #333;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+    word-spacing: 2px;
+    line-height: 28px;
+    padding-bottom: 2em;
+    /*text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;*/
 }
 
 .contact form input {
@@ -537,7 +543,7 @@ Contact
 
 .contact form input[type=submit]:active {
     outline: none;
-    border: solid 1px #4885ed;
+    border: solid 1px #205f93;
     background-color: #fdfdfd;
 }
 
@@ -575,7 +581,7 @@ Footer
     line-height: 21px;
 }
 
-.footer i {
+.footer .left i {
     color: #205f93;
     border-radius: 50%;
     background-color: white;
@@ -588,7 +594,7 @@ Footer
     transition: 0.2s;
 }
 
-.footer i:hover {
+.footer .left i:hover {
     opacity: 0.5;
 }
 
