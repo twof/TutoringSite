@@ -259,11 +259,14 @@ Classes
 .classes {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+
     margin: 0;
     padding: 0;
     padding-top: 6em;
     padding-bottom: 6em;
-    /*background-color: #f1f1f1;*/
+    background-color: #f1f1f1;
     color: black;
 }
 
@@ -337,6 +340,20 @@ Classes
     border-radius: 3px;*/
 }
 
+@media only screen and (max-width: 1140px) {
+
+    /*.about-container {
+        margin: 0 auto;
+        flex-flow: column;
+        justify-content: center;
+    }*/
+
+    .classes .card {
+        width: auto;
+        max-width: 500px
+    }
+}
+
 
 /*============================================================
 Tutors
@@ -347,13 +364,15 @@ Tutors
     padding: 0;
     padding-top: 6em;
     padding-bottom: 6em;
-    height: 900px;
     background-color: white;
     color: black;
+    text-align: center;
 }
 
 .tutors img {
-    width: 100%;
+    padding-top: 12px;
+    width: 90%;
+    text-align: center;
 }
 
 .tutors h2 {
@@ -391,6 +410,7 @@ Tutors
     font-family: 'Open Sans', sans-serif;
     font-size: 17px;
     font-weight: 300;
+    padding: 1em;
     text-decoration: none;
     letter-spacing: 0.3px;
     word-spacing: 2px;
@@ -411,7 +431,7 @@ Tutors
     width: calc(33% - 1.5em);
     float: left;
     background-color: rgb(244, 244, 244);
-    height: 400px;
+    height: 500px;
 }
 
 .tutors .card p {
