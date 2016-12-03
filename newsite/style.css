@@ -74,6 +74,14 @@ Other Styles
     float: left;
 }
 
+.banner h1 {
+    padding: 0;
+    padding-left: 4em;
+    padding-right: 6em;
+    float: left;
+    line-height: 100px;
+}
+
 .banner .link {
     margin: 0;
     padding: 0;
@@ -89,10 +97,12 @@ Other Styles
     /*background-color: green;*/
     height: calc(100% - 5px);
     opacity: 1;
-    transition: opacity 0.1s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
 }
 
-.banner .link:hover {}
+.banner .link:hover {
+    opacity: 0.6;
+}
 
 .banner a {
     color: white;
@@ -537,8 +547,94 @@ Footer
 ============================================================*/
 
 .footer {
+    color: white;
     background-color: #205f93;
-    height: 500px;
 }
+
+.footer h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    text-decoration: none;
+    letter-spacing: 0.3px;
+    word-spacing: 2px;
+    line-height: 21px;
+}
+
+.footer i {
+    color: #205f93;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 1em;
+    padding: 0em;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    transition: 0.2s;
+}
+
+.footer i:hover {
+    opacity: 0.5;
+}
+
+.footer .flex {
+    /*background-color: red;*/
+    display: flex;
+    margin: 0 auto;
+    /*width: 80vw;*/
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer .flex p {
+    text-align: left;
+}
+
+.footer .left {
+    /*background-color: yellow;*/
+    margin: 2em;
+    padding: 2em;
+    width: 300px;
+}
+
+.footer .right {
+    /*background-color: yellow;*/
+    margin: 2em;
+    padding: 2em;
+    width: 300px;
+}
+
+.footer .bottom {
+    padding-top: 6em;
+    padding-bottom: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
