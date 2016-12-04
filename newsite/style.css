@@ -82,6 +82,27 @@ Other Styles
     line-height: 100px;
 }
 
+.banner .mainlink {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    /*center text in div*/
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    /*background-color: green;*/
+    height: calc(100% - 5px);
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+    padding-left: 3em;
+    padding-right: 6em;
+    font-size: 28px;
+}
+
 .banner .link {
     margin: 0;
     padding: 0;
@@ -115,6 +136,29 @@ Other Styles
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+@media only screen and (max-width: 1080px) {
+
+    .banner .mainlink {
+        padding-left: 1em;
+        padding-right: 3em;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+
+    .banner .mainlink {
+        padding-left: 0.5em;
+        padding-right: 1em;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+
+    .banner .link {
+        display: none;
+    }
 }
 
 
@@ -154,6 +198,17 @@ Hero
 .hero-content h2 {}
 
 .hero-content p {}
+
+@media only screen and (max-width: 600px) {
+
+    /*.hero-content {
+        background-color: red;
+    }*/
+
+    .hero-content p {
+        display: none;
+    }
+}
 
 
 /*============================================================
@@ -421,7 +476,7 @@ Tutors
 .tutors .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
     margin: 0 auto;
     max-width: 900px;
 }
@@ -438,6 +493,20 @@ Tutors
     color: #6f6f6f;
     font-size: 15px;
     text-align: left;
+}
+
+@media only screen and (max-width: 1140px) {
+
+    /*.about-container {
+        margin: 0 auto;
+        flex-flow: column;
+        justify-content: center;
+    }*/
+
+    .tutors .card {
+        width: auto;
+        max-width: 300px
+    }
 }
 
 /*============================================================
