@@ -180,8 +180,6 @@ Hero
     color: white;
     font-family: 'Lato', sans-serif;
     position: relative;
-    margin-top: -500px;
-    height: 500px;
     padding-left: 6em;
     padding-right: 6em;
 }
@@ -195,16 +193,27 @@ Hero
     font-size: 48px;
 }
 
+.hero-content a {
+    background-color: white;
+    padding: 1em;
+    transition: 0.2s;
+    border: solid #eee 1px;
+    color: #205f93;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.hero-content a:hover {
+    opacity: 0.8;
+}
+
 .hero-content h2 {}
 
 .hero-content p {}
 
 @media only screen and (max-width: 600px) {
-
-    /*.hero-content {
-        background-color: red;
-    }*/
-
+    
     .hero-content p {
         display: none;
     }
