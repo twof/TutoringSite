@@ -9,7 +9,7 @@ BLUE COLOR: #205f93;
 */
 
 /*
-BANNER -> SMALLER ANd STICK TO TOP OF 
+BANNER -> SMALLER ANd STICK TO TOP OF
 */
 
 /*============================================================
@@ -213,7 +213,7 @@ Hero
 .hero-content p {}
 
 @media only screen and (max-width: 600px) {
-    
+
     .hero-content p {
         display: none;
     }
@@ -723,22 +723,25 @@ Footer
     width: 300px;
 }
 
+.footer .right a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .right a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .righta:hover {
+    text-decoration: underline;
+}
+
+.footer .right a:active {
+    text-decoration: underline;
+}
+
 .footer .bottom {
     padding-top: 6em;
     padding-bottom: 3em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
