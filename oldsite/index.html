@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mission: Learn</title>
+    <meta name="description" content="DESCRIPTION">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <meta name="google-site-verification" content="crM-rJLV42y8nutrwY40mJJmvAkcq3BsJM_86BagGG4" />
+
+    <script src="http://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+    <script>
+        var map;
+
+        function initialize() {
+            var mapDiv = document.getElementById('map-canvas');
+            var mapCenter = new google.maps.LatLng(37.773585, -122.417752);
+            var mapOptions = {
+                zoom: 17,
+                center: mapCenter,
+                mapTypeId: google.maps.MapTypeId.MAP
+            };
+
+            map = new google.maps.Map(mapDiv, mapOptions);
+
+            var markerOpts = {
+                position: mapCenter,
+                map: map,
+                title: 'Make School',
+                opacity: 0.75
+            };
+            var marker = new google.maps.Marker(markerOpts);
+
+            google.maps.event.addListener(map, 'click', onMapClick);
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+
+<body>
+    <div>
+
+        <div class="home">
+            <p class="title"> Mission: Learn </p>
+            <p class="description"> Mission Learn is a tutoring center with a focus on computer science and software develoment.</p>
+            <p class="signup"> Signup Today! </p>
+            <br />
+            <form class="email_field" action="#" method="post">
+                <fieldset>
+                    <input type="text" value="" placeholder="Enter your email address" />
+                    <button>Submit</button>
+                </fieldset>
+            </form>
+            <a href="#info_view"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+        </div>
+
+        <div class="info" id="info_view">
+
+
+            <div class="information w3-content w3-display-container">
+                <div class="mySlides view view_1">
+                    <p class="title">Cutting edge knowlege and tools</p>
+                    <p class="description">
+                        Tutors at Mission Learn are trained with the most up to date tools and development practices as set by industry standards. Unlike maths or literature, the world of software is constantly evolving, and MLWU works on the belief that instruction must evolve
+                        with it.
+                    </p>
+                    <p class="signup"></p>
+                </div>
+                <div class="mySlides view view_2">
+                    <p class="title">Pair programming</p>
+                    <p class="description">
+                        Pair programming is used to great effect at a wide range of companies including Facebook, Twitter, Braintree, and Pivotal. Through mentorship, senior developers are able to accelerate junior developers' careers, and pairing is core. Mission Learn believes
+                        the same can be implimented between tutors andstudents with a similar outcome.
+                    </p>
+                </div>
+                <div class="mySlides view view_3">
+                    <p class="title">Multilingual</p>
+                    <p class="description">
+                        Our tutors hail from all over the world and as a result are able to accommodate students from many backgrounds. Tutors at Mission Learn speak a wide range of languages including Cantonese, Mandarin, Dutch, Spanish, German, Thai, French, Urdu, and Hindi.
+                        So whether your first language isn't English or you're looking to practice something new, we're here for you!
+                    </p>
+                </div>
+
+            </div>
+            <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+            <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+            <a href="#tutors"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+        </div>
+        <div class="tutors" id="tutors">
+            <div class="tutor">
+                <p class="title"> Our Tutors: </p>
+                <table>
+                    <tr>
+                        <td class="jay photo">
+                            <p>Jay</p>
+                        </td>
+                        <td class="fiona photo">Fiona</td>
+                        <td class="alexr photo">
+                            <p>Alex</p>
+                        </td>
+                        <td class="julia photo">Julia</td>
+
+                    </tr>
+                    <tr>
+                        <td class="alexp photo">
+                            <p>Alex</p>
+                        </td>
+                        <td class="photo">
+                            <p></p>
+                        </td>
+                        <td class="nabil photo">
+                            <p>Nabil</p>
+                        </td>
+                        <td class="photo"></td>
+
+
+                    </tr>
+                </table>
+
+            </div>
+            <a href="#contact"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+        </div>
+        <div class="contact" id="contact">
+            <div class="contact_us">
+                <p class="title">Contact Us: </p>
+                <div id="map-canvas" style="height:500px"></div>
+                <p class="body">Email: hello@missionlearn.io </p>
+                <p class="body">Phone: (415) 735-5209</p>
+                <p class="body">Address: 1547 Mission St, San Francisco, CA 94103</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        $(".home a, .tutors a, .info a").click(function(event) {
+            $(".home a, .tutors a, .info a").removeClass("selected");
+            $(this).addClass("selected");
+
+            var id = $(this).attr("href");
+            console.log(id);
+            var y = $(id).offset().top;
+
+            $("body").stop().animate({
+                scrollTop: y
+            }, 700);
+        });
+
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

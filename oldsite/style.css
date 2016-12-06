@@ -1,0 +1,258 @@
+
+body {
+    background-image: url("images/background.png");
+    background-size: cover;
+    font-family: "Helvetica Neue";
+    background-attachment: fixed;
+
+}
+
+.home {
+    width: 900px;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    position: absolute;
+    height: 100%;
+}
+.info {
+    top: 100%;
+    width: 900px;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    position: absolute;
+    height: 100%;
+    text-align: center;
+}
+.tutors {
+    top: 200%;
+    width: 900px;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    position: absolute;
+    /*background-color: rgba(255, 255, 255, 0.56);*/
+    height: 100%;
+    text-align: center;
+}
+.contact {
+    top: 300%;
+    width: 900px;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    position: absolute;
+    /*background-color: red;*/
+    height: 100%;
+    text-align: center;
+}
+
+.home > p {
+    text-align: center;
+}
+
+p.title {
+    font-size: 60px;
+}
+
+p.description {
+    font-size: 35px;
+}
+
+p.signup {
+    font-size: 30px;
+}
+
+form.email_field  > fieldset {
+    border-style: solid;
+}
+
+form.email_field > fieldset {
+    font-size: 1em;
+    padding: 0;
+    border-radius: 7px;
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+    border-color: white;
+}
+
+form.email_field input {
+    font-size: inherit;
+    width: 800px;
+    padding: 0;
+    margin: 0;
+    border-width: 0;
+    float: left;
+    position: absolute;
+    height: 30px;
+    padding-left: 10px;
+    border-color: inherit;
+}
+form.email_field input:focus {
+    outline-width: 0;
+}
+form.email_field button {
+    width: 85px;
+    float: right;
+    font-weight: bold;
+    font-size: inherit;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border-width: 0;
+    color: white;
+    height: 30px;
+}
+
+form.email_field button:focus {
+    background-color: white;
+    color: #314C66;
+    outline-width: 0;
+}
+
+.info a {
+    color: white;
+}
+
+.info i {
+    position: absolute;
+    bottom: 0;
+    font-size: 70px;
+    left: 50%;
+    right: 50%;
+}
+/*.info {
+    background-color: blue;
+}
+.information {
+    background-color: yellow;
+}*/
+
+.home a {
+    color: white;
+}
+.home i {
+    position: absolute;
+    bottom: 0;
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%);
+    font-size: 70px;
+}
+
+.tutors a {
+    color: white;
+}
+.tutors i {
+    position: absolute;
+    bottom: 0%;
+    margin-right: 50%;
+    transform: translate(-50%);
+    font-size: 70px;
+}
+
+.information {
+    position:  absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    overflow: hidden;
+}
+
+.w3-display-left {
+    position:  absolute;
+    top: 50%;
+    left: -10%;
+    font-size: 70px;
+
+}
+
+.w3-display-right {
+    position:  absolute;
+    top: 50%;
+    right: -10%;
+    font-size: 70px;
+
+}
+
+.tutor {
+    position:  absolute;
+    top: 0;
+    width: 100%
+    transform: translate(0, -50%);
+}
+
+.tutor .title {
+}
+
+table {
+    border-spacing: 20px 50px;
+    text-align: center;
+}
+
+td {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 100%;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.photo {
+    background-position: center;
+    background-size: cover;
+    font-size: 40px;
+    font-weight: bold;
+    color: transparent;
+    transition: 1s;
+}
+.photo:hover {
+    color: white;
+    background-image: url();
+
+}
+.jay{
+    background-image: url("images/jay.png");
+}
+.alexp {
+    background-image: url("images/alexp.png");
+}
+.nabil{
+    background-image: url("images/nabil.png");
+}
+.alexr{
+    background-image: url("images/alexr.png");
+}
+.fiona{
+    background-image: url("images/fiona.png");
+}
+.julia{
+    background-image: url("images/julia.png");
+}
+
+.contact_us {
+    position: relative;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.contact_us .title {
+    position: relative;
+    top: 0;
+    font-size: 70px;
+}
+.contact_us .body {
+    font-size: 30px;
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
