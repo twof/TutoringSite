@@ -6,6 +6,7 @@ var config = {
   storageBucket: "tutorsite-7f25e.appspot.com",
   messagingSenderId: "364721637086"
 };
+
 firebase.initializeApp(config);
 var mydatabase = firebase.database();
 
@@ -28,6 +29,7 @@ function submitNewUser() {
     };
 
     postToFirebase(postData);
+    clearForm();
 }
 
 function postToFirebase(postData) {
@@ -37,16 +39,23 @@ function postToFirebase(postData) {
     firebase.database().ref().update(users);
 }
 
+function clearForm(){
+    $('#user_name').val('');
+    $('#user_email').val('');
+    $('#user_help').val('');
+    $('#user_instruction').text("Thank you for expressing interest! We will reach out to you as soon as we can.");
+}
+
 function initMap() {
     // Start Map And Set Center
     var center = {lat: 37.7735139, lng: -122.4178071};
     var map = new google.maps.Map(document.getElementById('map'), {
         scrollwheel: false,
         scaleControl: false,
-        zoom: 15,  
+        zoom: 15,
         center: center
     });
-    var options = { 
+    var options = {
         types: ['(cities)'],
         componentRestrictions: {country: "south africa"}
     };
